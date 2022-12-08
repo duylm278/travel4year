@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+div {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.imagebg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.imageic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#div1 {
+  background: #DDD;
+}
+
+#div2 {
+  background: #AAA;
+}
+
+#div3 {
+  background: #777;
+}
+
+#div4 {
+  background: #444;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #DDD;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="div1">
+	<div class="container">
+		<img src="image/bg_spring.jpg" alt="Icon" class="imagebg">
+		<div class="overlay">
+			<a href="spring_screen.html" class="icon" title="User Profile">
+				<img src="image/ic_spring.png" alt="Avatar" class="imageic">
+		
+			</a>
+		</div>
+	</div>
+</div>
+<div id="div2">
+<div class="container">
+		<img src="image/bg_summer.jpg" alt="Icon" class="imagebg">
+		<div class="overlay">
+			<a href="summer_screen.html" class="icon" title="User Profile">
+				<img src="image/ic_summer.png" alt="Avatar" class="imageic">
+			</a>
+		</div>
+	</div>
+</div>
+<div id="div3">
+	<div class="container">
+		<img src="image/bg_autumn.jpg" alt="Icon" class="imagebg">
+		<div class="overlay">
+			<a href="autumn_screen.html" class="icon" title="User Profile">
+				<img src="image/ic_autumn.png" alt="Avatar" class="imageic">
+			</a>
+		</div>
+	</div>
+</div>
+<div id="div4">
+	<div class="container">
+		<img src="image/bg_winter.jpg" alt="Icon" class="imagebg">
+		<div class="overlay">
+			<a href="winter_screen.html" class="icon" title="User Profile">
+				<img src="image/ic_winter.png" alt="Avatar" class="imageic">
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
